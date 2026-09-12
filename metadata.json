@@ -1,0 +1,7 @@
+{
+  "name": "SecondMedic Corporate BD CRM",
+  "description": "Corporate Business Development CRM with 7-step approval workflows, role & scope permissions, field visits, pipeline, billing, and full API mock adapter.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
