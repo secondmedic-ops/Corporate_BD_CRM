@@ -75,7 +75,11 @@ export const VendorsPage: React.FC = () => {
                   <p className="text-slate-800 font-medium">{v.contactPerson}</p>
                   <p className="text-[11px] text-slate-400">{v.phone}</p>
                 </td>
-                <td className="px-4 py-3.5 text-slate-600">{v.citiesCovered.join(', ')}</td>
+                <td className="px-4 py-3.5 text-slate-600">
+                  {v.citiesCovered && Array.isArray(v.citiesCovered) && v.citiesCovered.length > 0
+                    ? v.citiesCovered.join(', ')
+                    : v.city || 'Pan-India'}
+                </td>
                 <td className="px-4 py-3.5">
                   <span
                     className={`inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-semibold ${

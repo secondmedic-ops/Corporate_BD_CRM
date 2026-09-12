@@ -356,6 +356,7 @@ export interface VendorDto {
   phone: string;
   email: string;
   city: string;
+  citiesCovered?: string[];
   gstin: string;
   pan: string;
   bankAccountName: string;

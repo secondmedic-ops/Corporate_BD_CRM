@@ -44,7 +44,7 @@ export const ProtectedRoute: React.FC<ProtectedRouteProps> = ({
         </div>
         <h2 className="text-lg font-bold text-slate-800">Role Access Restricted</h2>
         <p className="text-xs text-slate-600 leading-relaxed">
-          This section is restricted to [{rolesAllowed.join(', ')}]. Your current role is{' '}
+          This section is restricted to [{Array.isArray(rolesAllowed) ? rolesAllowed.join(', ') : ''}]. Your current role is{' '}
           <span className="font-semibold text-slate-900">{user.role}</span>.
         </p>
       </div>
